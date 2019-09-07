@@ -4,6 +4,8 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByTag('posts').reverse();
     });
 
+    eleventyConfig.addPassthroughCopy('**/*.yml');
+
     return {
         dir: {
             includes: "_includes",
