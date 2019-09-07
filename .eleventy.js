@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByTag('posts').reverse();
     });
 
-    eleventyConfig.addPassthroughCopy('**/*.yml');
+    eleventyConfig.addPassthroughCopy('admin/config.yml');
 
     return {
         dir: {
