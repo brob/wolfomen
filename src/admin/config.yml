@@ -22,8 +22,8 @@ collections:
     name: "pages"
     files: 
       - label: "About Page"
-       name: "about"
-       files: "src/about.md"
-       fields: 
-        - {label: "Title", name: title, widget: string}
-        - {label: "Layout", name: layout, widget: hidden, default: "layouts/homepage.njk"}
+        name: "about"
+        files: "src/about.md"
+        fields: 
+          - {label: "Title", name: title, widget: string}
+          - {label: "Layout", name: layout, widget: hidden, default: "layouts/homepage.njk"}
