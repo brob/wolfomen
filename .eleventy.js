@@ -1,3 +1,6 @@
+const blogTools = require("eleventy-plugin-blog-tools");
+
+
 module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection("posts", function(collection) {
@@ -5,6 +8,10 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addPassthroughCopy('admin/config.yml');
+
+
+    eleventyConfig.addPlugin(blogTools);
+
 
     return {
         dir: {
